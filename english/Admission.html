@@ -2174,32 +2174,15 @@
 
 
 <script text="text/Javascript">
-    // new DataTable('#example');
-
-    $(document).ready(function() {
-$('#Mytable').DataTable( {
-  "language": {
-"decimal":        "",
-"emptyTable":     "No data ",
-"info":           "Display _START_ to _END_ of _TOTAL_ Records",
-"infoEmpty":      " 0 to 0 of 0 Records",
-"infoFiltered":   "(Displayed from _MAX_ total Records)",
-"infoPostFix":    "",
-"thousands":      ",",
-"lengthMenu":     "Display _MENU_ Records",
-"loadingRecords": "Loading...",
-"processing":     "",
-"search":         "Find Out:",
-"zeroRecords":    "No found",
-"paginate": {
-    "first":      "F",
-    "last":       "L",
-    "next":       "N",
-    "previous":   "P"
-},
-  }
-} );
-} );  
+   new DataTable('#example', {
+    language: {
+        info: 'Showing page _PAGE_ of _PAGES_',
+        infoEmpty: 'No records available',
+        infoFiltered: '(filtered from _MAX_ total records)',
+        lengthMenu: 'Display _MENU_ records per page',
+        zeroRecords: 'Nothing found - sorry'
+    }
+});
 </script>
 
 </body>
