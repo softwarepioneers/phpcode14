@@ -2172,31 +2172,32 @@
     $(".anyname").chosen();
 </script> 
 <script src="enjs/dataTables.bootstrap4.min.js"></script>
-<script>
-      $(document).ready(function() {
-                   $('#Mytable').DataTable( {
-                       "language": {
-                       "decimal":        " aالبيانات الخالية",
-                       "emptyTable":     "لم يعثر على أية سجلات",
-                       "info":           "إظهار _START_ إلى _END_ من أصل _TOTAL_ سجلا",
-                       "infoEmpty":      " 0 to 0 of 0 السجلات",
-                       "infoFiltered":   "(منتقاة من مجموع _MAX_ سجلا )",
-                       "infoPostFix":    "",
-                       "thousands":      ",",
-                       "lengthMenu":     "العرض _MENU_ السجلات",
-                       "loadingRecords": "جاري التحميل",
-                       "processing":     "",
-                       "search":         "إبحث:",
-                       "zeroRecords":    "لا توجد المعلومات",
-                       "paginate": {
-                           "first":      "الأول",
-                           "last":       "الأخير",
-                           "next":       "التالي",
-                           "previous":   "السابق"
-                       },
-                       }
-                   } );
-                   } );  
+<script text="text/Javascript">
+            new DataTable('#Mytable');
+            $(document).ready(function() {
+            $('#Mytable').DataTable( {
+            "language": {
+            "decimal":        "",
+            "emptyTable":     "No data ",
+            "info":           "Display _START_ to _END_ of _TOTAL_ Records",
+            "infoEmpty":      " 0 to 0 of 0 Records",
+            "infoFiltered":   "(Displayed from _MAX_ total Records)",
+            "infoPostFix":    "",
+            "thousands":      ",",
+            "lengthMenu":     "Display _MENU_ Records",
+            "loadingRecords": "Loading...",
+            "processing":     "",
+            "search":         "Find Out:",
+            "zeroRecords":    "No found",
+            "paginate": {
+                "first":      "F",
+                "last":       "L",
+                "next":       "N",
+                "previous":   "P"
+            },
+            }
+            } );
+            } );  
 </script>
 
 
