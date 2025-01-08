@@ -2173,28 +2173,30 @@
 </script> 
 <script src="enjs/dataTables.bootstrap4.min.js"></script>
 <script >
-             var table = $('#Mytable')
-                .DataTable({
-                 "columns":{//......}
-                 "language": 
-                        {
-                            "sProcessing": "جارٍ التحميل...",
-                            "sLengthMenu": "أظهر _MENU_ مدخلات",
-                            "sZeroRecords": "لم يعثر على أية سجلات",
-                            "sInfo": "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
-                            "sInfoEmpty": "يعرض 0 إلى 0 من أصل 0 سجل",
-                            "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
-                            "sInfoPostFix": "",
-                            "sSearch": "ابحث:",
-                            "sUrl": "",
-                            "oPaginate": {
-                                "sFirst": "الأول",
-                                "sPrevious": "السابق",
-                                "sNext": "التالي",
-                                "sLast": "الأخير"
-                            }
-                        }
-                }});
+            $(document).ready(function() {
+                   $('#Mytable').DataTable( {
+                       "language": {
+                       "decimal":        " البيانات الخالية",
+                       "emptyTable":     "لم يعثر على أية سجلات",
+                       "info":           "إظهار _START_ إلى _END_ من أصل _TOTAL_ سجلا",
+                       "infoEmpty":      " 0 to 0 of 0 السجلات",
+                       "infoFiltered":   "(منتقاة من مجموع _MAX_ سجلا )",
+                       "infoPostFix":    "",
+                       "thousands":      ",",
+                       "lengthMenu":     "العرض _MENU_ السجلات",
+                       "loadingRecords": "جاري التحميل",
+                       "processing":     "",
+                       "search":         "إبحث:",
+                       "zeroRecords":    "لا توجد المعلومات",
+                       "paginate": {
+                           "first":      "الأول",
+                           "last":       "الأخير",
+                           "next":       "التالي",
+                           "previous":   "السابق"
+                       },
+                       }
+                   } );
+                   } );   
 </script>
 
 
