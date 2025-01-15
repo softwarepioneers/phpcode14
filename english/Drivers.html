@@ -1014,28 +1014,25 @@
                             <form id="basic-form" method="post" >
                                 
                                 <div class="row">
-
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT NAME:</label>
-                                            <input type="text" name="StudentName"    maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
-                                        </div>
-                                    </div>
-
-                                   
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT REGISTRATION DATE:</label>
-                                            <input  type="text"  name="StudentRegistrationDate" placeholder="Student Registration Date" value="" class="form-control"   onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>DRIVER NAME:</label>
+                                            <input type="text" name="DriverName"  maxlength="28" placeholder="Driver Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT TYPE:</label>
-                                            <select name="StudentType"  placeholder="Student Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Type</option>
-                                                <option value="Boy">Boy</option>
-                                                <option value="Girl">Girl</option>
+                                            <label>DRIVER REGISTRATION DATE:</label>
+                                            <input  type="text"  name="DriverRegistrationDate" placeholder="Driver Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>DRIVER TYPE:</label>
+                                            <select name="DriverType" placeholder="Driver Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Driver Type</option>
+                                                <option value="Man">Man</option>
+                                                <option value="Woman">Woman</option>
                                             </select>
                                         </div>
                                     </div>
@@ -1043,71 +1040,31 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT SCHOOL:</label>
-                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student School</option>
+                                            <label>DRIVER SCHOOL:</label>
+                                            <select name="DriverSchool" placeholder="Driver School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Driver School</option>
                                                 <option value="Salaama School">Salaama School</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT STAGE:</label>
-                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Stage</option>
-                                                <option value="Kg">Kg</option>
-                                                <option value="Primary">Primary</option>
-                                                <option value="Preparatory">Preparatory</option>
-                                                <option value="Secondary">Secondary</option>
+                                            <label>DRIVER JOB:</label>
+                                            <select name="DriverJob" placeholder="Driver Job" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Driver Job</option>
+                                                <option value="Manager">Manager</option>
+                                                <option value="Accountant">Accountant</option>
+                                                <option value="Assistant">Assistant</option>
+                                                <option value="Watchman">Watchman</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT CLASS:</label>
-                                            <!-- <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >  -->
-                                            <select name="StudentClass" data-placeholder="Student Class" value=""  class="anyname form-control" required>
-                                                <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
-                                                    <option value="" selected="" disabled="" >Student Class</option>
-                                                    <option value="Class A">Class A</option>
-                                                    <option value="Class B">Class B</option>
-                                                    <option value="Class C">Class C</option>
-                                                    <option value="Class D">Class D</option>
-                                                    <option value="Class E">Class E</option>
-                                                    <option value="Class F">Class F</option>
-                                                    <option value="Class G">Class G</option>
-                                                    <option value="Class H">Class H</option>
-                                                    <option value="Class I">Class I</option>
-                                                    <option value="Class J">Class J</option>
-                                                    <option value="Class K">Class K</option>
-                                                    <option value="Class L">Class L</option>
-                                                    <option value="Class M">Class M</option>
-                                                    <option value="Class N">Class N</option>
-                                                    <option value="Class O">Class O</option>
-                                                    <option value="Class P">Class P</option>
-                                                    <option value="Class Q">Class Q</option>
-                                                    <option value="Class R">Class R</option>
-                                                    <option value="Class S">Class S</option>
-                                                    <option value="Class T">Class T</option>
-                                                    <option value="Class U">Class U</option>
-                                                    <option value="Class V">Class V</option>
-                                                    <option value="Class W">Class W</option>
-                                                    <option value="Class X">Class X</option>
-                                                    <option value="Class Y">Class Y</option>
-                                                    <option value="Class Z">Class Z</option>
-                                           </select>
-                  
-                                        </div>
-                                    </div>
-                                   
-                                  </div>
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT NATIONALITY:</label>
-                                            <select name="StudentNationality" data-placeholder="Student Nationality" value=""  class="anyname form-control" required>
+                                            <label>DRIVER NATIONALITY:</label>
+                                            <select name="DriverNationality" data-placeholder="Driver Nationality" value=""  class="anyname form-control" required>
                                                  <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
-                                                    <option value="" selected="" disabled="" >Student Nationality</option>
+                                                    <option value="" selected="" disabled="" >Driver Nationality</option>
                                                     <option value="Afghanistan">Afghanistan</option>
                                                     <option value="Albania">Albania</option>
                                                     <option value="Algeria">Algeria</option>
@@ -1280,86 +1237,64 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <!-- <div class="col">
+                                   
+                                  </div>
+                                  <div class="row">
+                                                            <!-- <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT NATIONALITY:</label>
-                                            <input type="text" name="StudentNationality"  maxlength="28" placeholder="Student Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
+                                            <label>Driver NATIONALITY:</label>
+                                            <input type="text" name="DriverNationality"  maxlength="28" placeholder="Driver Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div> -->
-
-                                    <!-- <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT PHONE:</label>
-                                            <select name="StudentPhone"  placeholder="Student Phone" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Phone</option>
-                                                <option value="1234567">1234567</option>
-                                                <option value="2345678">2345678</option>
-                                                <option value="3456789">3456789</option>
-                                                <option value="4567891">4567891</option>
-                                                <option value="5678912">5678912</option>
-                                                <option value="6789123">6789123</option>
-                                                <option value="7891234">7891234</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
-
-
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT PHONE:</label>
-                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>DRIVER PHONE:</label>
+                                            <input type="text" name="DriverPhone" placeholder="Driver Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>DRIVER WHATSAPP:</label>
+                                            <input type="text" name="DriverWhatsApp" placeholder="Driver WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
 
-                                    <!-- <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT WHATSAPP:</label>
-                                            <select name="StudentWhatsApp"  placeholder="Student WhatsApp" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student WhatsApp</option>
-                                                <option value="1234567">1234567</option>
-                                                <option value="2345678">2345678</option>
-                                                <option value="3456789">3456789</option>
-                                                <option value="4567891">4567891</option>
-                                                <option value="5678912">5678912</option>
-                                                <option value="6789123">6789123</option>
-                                                <option value="7891234">7891234</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
-
+                                   
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT WHATSAPP:</label>
-                                            <input type="text"  name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>DRIVER EMAIL:</label>
+                                            <input type="email" name="DriverEmail"  placeholder="Driver Email" value="" class="form-control"  required >
+                                            <!-- <input type="text" name="DriverEmail"  maxlength="90" placeholder="Driver Email" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required > -->
                                         </div>
                                     </div>
+            
                                    
                                   </div>
                                   
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT REGION:</label>
-                                            <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Region</option>
+                                            <label>DRIVER REGION:</label>
+                                            <select name="DriverRegion" id="subject" placeholder="Driver Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Driver Region</option>
                                             </select>
                                            
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT CITY:</label>
-                                            <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student City</option>
+                                            <label>DRIVER CITY:</label>
+                                            <select name="DriverCity" id="topic" placeholder="Driver Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Driver City</option>
                                             </select>
                                             
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT DISTRICT:</label>
-                                            <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student District</option>
+                                            <label>DRIVER DISTRICT:</label>
+                                            <select name="DriverDistrict" id="chapter" placeholder="Driver chapter" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Driver District</option>
                                             </select>
                                             
                                         </div>
@@ -1392,12 +1327,13 @@
                                 <table id="Mytable" class="table table-bordered table-hover js-basic-example dataTable table-custom">
                                     <thead>
                                         <tr>
-                                            <th> STUDENT</th>
+                                            <th> DRIVER</th>
                                             <th> DATE</th>
                                             <th> TYPE</th>
                                             <th> SCHOOL</th>
-                                            <th> STAGE</th>
-                                            <th> CLASS</th>
+                                            <th> JOB</th>
+                                            <th> NATIONALITY</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
