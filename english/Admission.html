@@ -2076,35 +2076,16 @@
     </script>
 
 <script>
-    $(document.ready(function(){
-    $('#Mytable').DataTable({
-    "language":{
-            "decimal":        "",
-            "emptyTable":     "No data available in table",
-            "info":           "Showing _START_ to _END_ of _TOTAL_ entries",
-            "infoEmpty":      "Showing 0 to 0 of 0 entries",
-            "infoFiltered":   "(filtered from _MAX_ total entries)",
-            "infoPostFix":    "",
-            "thousands":      ",",
-            "lengthMenu":     "Show _MENU_ entries",
-            "loadingRecords": "Loading...",
-            "processing":     "",
-            "search":         "Search:",
-            "zeroRecords":    "No Records",
-            "paginate": {
-                "first":      "First",
-                "last":       "Last",
-                "next":       "Next",
-                "previous":   "Previous"
-            },
-            "aria": {
-                "orderable":  "Order by this column",
-                "orderableReverse": "Reverse order this column"
-            }
-        }
+  new DataTable('#Mytable', {
+    language: {
+        info: 'Showing page _PAGE_ of _PAGES_',
+        infoEmpty: 'No records available',
+        infoFiltered: '(filtered from _MAX_ total records)',
+        lengthMenu: 'Display _MENU_ records per page',
+        zeroRecords: 'Nothing found - sorry'
     }
+});
 </script> 
 
 </body>
 </html>
-
