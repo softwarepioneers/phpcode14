@@ -2076,15 +2076,30 @@
     </script>
 
 <script>
-  new DataTable('#Mytable', {
-    language: {
-        info: 'Showing page _PAGE_ of _PAGES_',
-        infoEmpty: 'No records available',
-        infoFiltered: '(filtered from _MAX_ total records)',
-        lengthMenu: 'Display _MENU_ records per page',
-        zeroRecords: 'Nothing found - sorry'
-    }
-});
+   $(document).ready(function() {
+                   $('#example').DataTable( {
+                       "language": {
+                       "decimal":        " aالبيانات الخالية",
+                       "emptyTable":     "لم يعثر على أية سجلات",
+                       "info":           "إظهار _START_ إلى _END_ من أصل _TOTAL_ سجلا",
+                       "infoEmpty":      " 0 to 0 of 0 السجلات",
+                       "infoFiltered":   "(منتقاة من مجموع _MAX_ سجلا )",
+                       "infoPostFix":    "",
+                       "thousands":      ",",
+                       "lengthMenu":     "العرض _MENU_ السجلات",
+                       "loadingRecords": "جاري التحميل",
+                       "processing":     "",
+                       "search":         "إبحث:",
+                       "zeroRecords":    "لا توجد المعلومات",
+                       "paginate": {
+                           "first":      "الأول",
+                           "last":       "الأخير",
+                           "next":       "التالي",
+                           "previous":   "السابق"
+                       },
+                       }
+                   } );
+                   } );  
 </script> 
 
 </body>
