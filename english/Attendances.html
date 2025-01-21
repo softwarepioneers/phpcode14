@@ -1037,9 +1037,10 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STAFF MONTH:</label>
+                                            <input id="bday-month" type="month" name="StaffMonth" />
                                             <!--
                                             <input type="month" name="StaffMonth"  placeholder="Staff Month" value="" class="form-control"  required >
-                                            -->
+                                            
                                             <select name="StaffMonth" placeholder="Staff Month" value=""  class="form-control" required>
                                                 <option value="" selected="" disabled="" >Staff Month</option>
                                                 <option value="January">January</option>
@@ -1055,6 +1056,7 @@
                                                 <option value="November">November</option>
                                                 <option value="December">December</option>
                                             </select> 
+                                            -->
                                         </div>
                                     </div>
 
@@ -2054,7 +2056,8 @@
     </script>
 
 <script>
-    $(".anyname").chosen();
+    const monthControl = document.querySelector('input[type="month"]');
+    monthControl.value = "2015-04";
 </script> 
 
 </body>
